@@ -1,0 +1,35 @@
+
+body{
+  background: #edeef0;
+}
+
+
+.app-wrapper {
+  display: grid;
+  margin: 0 auto;
+  width: 1400px;
+
+  grid-template-areas: 
+  "h h"
+  "n c";
+
+  grid-template-rows: 62px 1fr; 
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  
+
+}
+
+
+.app-wrapper-content{
+  
+    grid-area: c;
+   
+    background: linear-gradient(180deg, rgb(253, 245, 237), rgb(185, 189, 235));
+  
+  
+  
+  
+
+
+}
