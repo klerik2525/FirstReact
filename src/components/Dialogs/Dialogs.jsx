@@ -32,7 +32,6 @@ const Dialogs = (props) => {
 
     }
 
-
     
 
     return (
