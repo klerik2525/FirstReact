@@ -9,15 +9,22 @@
 
 }
 
-.dialogs a  {
-    color: rgb(255, 8, 28);
+.dialogs .active {
+    color: gold;
 }
+
+
+
 
 
 .messages {
     padding: 10px;
 }
 
+
 .dialogsItem a {
-    text-decoration: none;
-}
+   text-decoration: none;}
+/*
+.dialogs a  {
+    color: rgb(255, 8, 28);} 
+  */
