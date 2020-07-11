@@ -9,7 +9,7 @@ import NameFriends from '../NameFriends/NameFriends'
 const NavBar = (props) => {
 
   
-    let FriendsElements = props.state.namesF.map((f) => <NameFriends friendName={f.friendName} id = {f.id}  />)
+    //let FriendsElements = props.state.namesF.map((f) => <NameFriends friendName={f.friendName} id = {f.id}  />)
 
     return ( 
     <nav className = {classes.nav}>
@@ -38,10 +38,11 @@ const NavBar = (props) => {
     </div>
     
     
+   {/*
    <div className = {classes.frendsBlock}>
      
     <img src=  'https://www.seekpng.com/png/full/332-3326957_png-file-trust-circle-icon.png' alt = " " />{FriendsElements}
-   </div>
+   </div>*/}
 
     
 
