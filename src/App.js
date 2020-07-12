@@ -17,11 +17,10 @@ import DialogsContainer from './components/Dialogs/DialogsContainer';
 
 
 
-const App = (props) => {
+const App = () => {
 
   
   return (
-    
       <div className='app-wrapper'>
         <Header />
         <NavBar  />
@@ -31,7 +30,7 @@ const App = (props) => {
             render={() => <Profile  />} />
 
           <Route path='/Dialogs'
-            render={() => <DialogsContainer  />} />
+            render={ () => <DialogsContainer /> }/>
 
           <Route path='/News' render={() => <News />} />
           <Route path='/Musik' render={() => <Musik />} />
@@ -57,3 +56,9 @@ const App = (props) => {
 
 
 export default App;
+
+
+
+
+
+

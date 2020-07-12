@@ -2,13 +2,9 @@ import React from 'react';
 import classes from './MyPosts.module.css';
 import Post from './Post/Post';
 
-
-
-
 const MyPosts = (props) => {
-
-
-  let PostsElements = props.posts.map((P) => <Post message={P.post} id={P.id} likesCount={P.likesCount} dislikesCount={P.dislikesCount} />)
+  let PostsElements = 
+      props.posts.map((P) => <Post message={P.post} id={P.id} likesCount={P.likesCount} dislikesCount={P.dislikesCount} />)
 
   let newPostElement = React.createRef();
   
@@ -19,10 +15,8 @@ const MyPosts = (props) => {
     }
 
   let onPostChange = () => {
-    let text = newPostElement.current.value;
-    props.updateNewPost(text);
-    
-    
+      let text = newPostElement.current.value;
+      props.updateNewPostText(text);
   }
 
   return (
